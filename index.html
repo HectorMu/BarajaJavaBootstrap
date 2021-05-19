@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Baraja</title>
+</head>
+<body class="bg-dark">
+    <div class="container bg-secondary text-white p-2 text-center mt-2">
+        <h1><strong>Cartas de baraja</strong> </h1>
+    </div>
+    <div class="container mt-5 ">
+        <div class="row row-cols-5">
+          <div class="col"> <img id="carta1" src="images/SinVoltear.png" alt="" height="300px" width="200px">
+            <button id="btn_voltearC1" class="btn btn-danger btn-block mt-2">Voltear</button>
+            <button id="btn_ocultarC1" class="btn btn-danger btn-block mt-2">Ocultar</button>
+        </div>
+          <div class="col"> <img id="carta2" src="images/SinVoltear.png" alt="" height="300px" width="200px">
+            <button id="btn_voltearC2" class="btn btn-danger btn-block mt-2">Voltear</button>
+            <button id="btn_ocultarC2" class="btn btn-danger btn-block mt-2">Ocultar</button>
+        </div>
+          <div class="col"> <img id="carta3" src="images/SinVoltear.png" alt="" height="300px" width="200px">
+            <button id="btn_voltearC3" class="btn btn-danger btn-block mt-2">Voltear</button>
+            <button id="btn_ocultarC3" class="btn btn-danger btn-block mt-2">Ocultar</button>
+        </div>
+          <div class="col"> <img id="carta4" src="images/SinVoltear.png" alt="" height="300px" width="200px">
+            <button id="btn_voltearC4" class="btn btn-danger btn-block mt-2">Voltear</button>
+            <button id="btn_ocultarC4" class="btn btn-danger btn-block mt-2">Ocultar</button>
+        </div>
+          <div class="col"> <img id="carta5" src="images/SinVoltear.png" alt="" height="300px" width="200px">
+            <button id="btn_voltearC5" class="btn btn-danger btn-block mt-2">Voltear</button>
+            <button id="btn_ocultarC5" class="btn btn-danger btn-block mt-2">Ocultar</button>
+        </div>
+        </div>
+      </div>
+      <div class="container">
+        <button id="btn_mostrar" class="btn btn-danger btn-block mt-4">Mostrar todo</button>
+        <button id="btn_ocultar" class="btn btn-danger btn-block mt-2">Ocultar todo</button>
+      </div>
+    
+      <div id="infoModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Explicacion del funcionamiento</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>1- Mientras el raton este encima de cada carta se va a mostrar esa carta, al removerlo se oculta.
+                    <br>2- Se puede voltear u ocultar multiples cartas con los botones que aparecen abajo de cada carta.
+                    <br>3- Se pueden mostrar u ocular todas las cartas con los botones del fondo.
+                    <br>Hector Manuel Muñoz Flores
+                    </p>
+                    <button type="button" class="btn btn-danger btn-block" data-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    //script to popup modal at load the page
+      <script>
+        $(document).ready(function(){
+            $("#infoModal").modal('show');
+        });
+    </script>
+    <script src="js/index.js"></script>
+</body>
+</html>
